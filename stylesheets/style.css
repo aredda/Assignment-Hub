@@ -1,0 +1,180 @@
+.nav-item
+{
+    cursor: pointer;
+    padding: 10px 20px;
+    display: block;
+    color: white;
+    transition: color 0.5s, background 0.5s;
+}
+
+.nav-item:hover
+{
+    color: white;
+    text-decoration: none;
+}
+
+.nav-item span,
+.card-body span
+{
+    float: right;
+    margin: auto 0;
+    transform: scale(0.7);
+    background: #ededed;
+    color: #2e2e2e;
+    padding: 1px 5px;
+    border-radius: 4px;
+    box-shadow: 0 0 5px white;
+}
+
+.nav-item img
+{
+    filter: invert(100);
+    width: 23px;
+    height: 23px;
+}
+
+.menu > .nav-item, .bg-black
+{
+    background: linear-gradient(#2e2e2e, #1c1c1c);
+}
+
+.menu > .nav-item.item-active
+{
+    /* border-left: #e34507 5px solid; */
+    /* color: #e34507; */
+    /* background: linear-gradient(to right, whitesmoke, #e0e0e0); */
+    /* border-left: whitesmoke 5px solid; */
+    color: whitesmoke;
+    background: linear-gradient(#ff510d, #e34507);
+}
+
+.sub-menu
+{
+    display: none;
+}
+
+.sub-menu .nav-item
+{
+    color: #e34507;
+    background: linear-gradient(whitesmoke, #ededed);
+    padding: 7px 40px;
+}
+
+.sub-menu .nav-item:hover
+{
+    color: #1c1c1c;
+}
+
+.bg-orange
+{
+    background: linear-gradient(#ff510d, #e34507);
+}
+
+.text-orange
+{
+    color: #e34507; 
+}
+
+.text-shadow
+{
+    text-shadow: 0 2px black;
+}
+
+input[type='submit']
+{
+    border-width: 0;
+    background: #e34507;
+    padding: 5px 15px;
+    border-radius: 3px;
+    color: white;
+    box-shadow: 0 0 3px black;
+    transition: color 0.5s, background 0.5s;
+    margin-top: 20px;
+}
+
+input[type='submit']:hover
+{
+    background: white;
+    color: #e34507;
+}
+
+@keyframes anim_fade_out {
+    100% {
+        opacity: 0;
+        display: none;
+    }    
+}
+
+.alert 
+{
+    animation-name: anim_fade_out;
+    animation-delay: 1000ms;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+.form-label
+{
+    color: #e34507 !important;
+    font-weight: bold;
+}
+
+@keyframes anim_text_stretch
+{
+    0%, 100% {
+        letter-spacing: normal;
+    }
+    50% {
+        letter-spacing: .25px;
+    }
+}
+
+.text-stretch
+{
+    animation-name: anim_text_stretch;
+    animation-delay: 0;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+}
+
+.card
+{
+    transition: 
+        transform 0.5s, 
+        color 0.5s,
+        background 0.5s,
+        border-color 0.5s,
+        box-shadow 0.5s !important;
+    cursor: pointer;
+}
+
+.card span
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: none;
+    margin: 10px;
+    padding: 3px;
+    font-size: small;
+}
+
+.card:hover
+{
+    transform: scale(1.025);
+    background: #ff510d;
+    color: white;
+    border-color: white;
+    box-shadow: 0 0 10px gray;
+}
+
+.card-img-top
+{
+    transition: filter 0.5s;
+}
+
+.card:hover .card-img-top
+{
+    filter: invert(100);
+}

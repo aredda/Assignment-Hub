@@ -1,0 +1,4 @@
+c1;Ibrahim;Tangier
+c2;Andy;California
+c3;Jean-Pierre;Paris
+c4;Angelica;Buenos Aires
